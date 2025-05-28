@@ -29,7 +29,8 @@ function displayResults(data) {
       // Menambahkan kelas animasi khusus untuk "Hinatazaka46" dan "Hiragana"
       if (
         item.artist === "Hinatazaka46" ||
-        item.artist === "Hiragana Keyakizaka46" || item.artist === "Hiragana Keyakizaka46 (Hinatazaka46)"
+        item.artist === "Hiragana Keyakizaka46" ||
+        item.artist === "Hiragana Keyakizaka46 (Hinatazaka46)"
       ) {
         link.classList.add("shining-text");
       } else if (
@@ -67,7 +68,7 @@ function search(data) {
 function loadData() {
   const fileUrls = [
     "https://docs.google.com/spreadsheets/d/14Fdcj-zkv052BVkiuBAlhjSZ3Uce4EG-oIE5HAEJpCc/export?format=csv&gid=0#gid=0",
-    "https://docs.google.com/spreadsheets/d/14Fdcj-zkv052BVkiuBAlhjSZ3Uce4EG-oIE5HAEJpCc/export?format=csv&gid=62941114#gid=62941114",
+    "https://docs.google.com/spreadsheets/d/14Fdcj-zkv052BVkiuBAlhjSZ3Uce4EG-oIE5HAEJpCc/export?format=csv&gid=1998023920#gid=1998023920",
   ];
 
   const promises = fileUrls.map((url) =>

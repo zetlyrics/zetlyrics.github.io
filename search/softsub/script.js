@@ -29,7 +29,8 @@ function displayResults(data) {
       // Menambahkan kelas animasi khusus untuk "Hinatazaka46" dan "Hiragana"
       if (
         item.artist === "Hinatazaka46" ||
-        item.artist === "Hiragana Keyakizaka46" || item.artist === "Hiragana Keyakizaka46 (Hinatazaka46)"
+        item.artist === "Hiragana Keyakizaka46" ||
+        item.artist === "Hiragana Keyakizaka46 (Hinatazaka46)"
       ) {
         link.classList.add("shining-text");
       } else if (
@@ -66,8 +67,8 @@ function search(data) {
 // Fungsi untuk memuat data dari Google Sheets dalam format CSV
 function loadData() {
   const fileUrls = [
-    "https://docs.google.com/spreadsheets/d/14Fdcj-zkv052BVkiuBAlhjSZ3Uce4EG-oIE5HAEJpCc/export?format=csv&gid=0#gid=0",
-    "https://docs.google.com/spreadsheets/d/14Fdcj-zkv052BVkiuBAlhjSZ3Uce4EG-oIE5HAEJpCc/export?format=csv&gid=62941114#gid=62941114",
+    "https://docs.google.com/spreadsheets/d/1SHK8C-IfBY-afs47_zNN9w-X049TEwDld79Mxn1nyeQ/export?format=csv&gid=0#gid=0",
+    "https://docs.google.com/spreadsheets/d/1SHK8C-IfBY-afs47_zNN9w-X049TEwDld79Mxn1nyeQ/export?format=csv&gid=1359633838#gid=1359633838",
   ];
 
   const promises = fileUrls.map((url) =>
