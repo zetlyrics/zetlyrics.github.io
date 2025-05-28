@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #4a90e2;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background: #f9f9f9;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4a90e2;
+}
+
+/* Navigation Buttons Styles */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-button {
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.nav-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.nav-button:hover:not(:disabled) {
+  background-color: #357abd;
+}
+
+/* Shining Text Animation */
+.shining-text {
+  position: relative;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333; /* Warna teks normal */
+  background: linear-gradient(90deg, #63b7db, #a86ca9, #63b7db);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+/* New Text Animation for New Posts */
+.new-text {
+  position: relative;
+  font-size: 1em;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #ff7f50,
+    #ff6347,
+    #ff4500
+  ); /* Kombinasi oranye cerah dan merah */
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
