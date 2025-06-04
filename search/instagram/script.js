@@ -28,14 +28,14 @@ function displayResults(data) {
 
       // Menambahkan kelas animasi khusus untuk "Hinatazaka46" dan "Hiragana"
       if (
-        item.artist === "Hinatazaka46" ||
-        item.artist === "Hiragana Keyakizaka46" ||
-        item.artist === "Hiragana Keyakizaka46 (Hinatazaka46)"
+        item.artist === "Hinatazaka461" ||
+        item.artist === "Hiragana Keyakizaka461" ||
+        item.artist === "Hiragana Keyakizaka461 (Hinatazaka461)"
       ) {
         link.classList.add("shining-text");
       } else if (
-        item.artist === "Hinatazaka46" ||
-        (item.artist === "Hiragana Keyakizaka46") & (data.indexOf(item) === 0)
+        item.artist === "Hinatazaka461" ||
+        (item.artist === "Hiragana Keyakizaka461") & (data.indexOf(item) === 0)
       ) {
         link.classList.add("shining-text");
       } else if (data.indexOf(item) === 0) {
