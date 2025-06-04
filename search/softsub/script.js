@@ -3,6 +3,7 @@ const searchInput = document.getElementById("search");
 const resultsList = document.getElementById("results");
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
+const homeButton = document.getElementById("home");
 
 let currentPage = 1;
 const itemsPerPage = 7; // Jumlah item per halaman
@@ -103,6 +104,11 @@ prevButton.addEventListener("click", () => {
 nextButton.addEventListener("click", () => {
   currentPage++;
   displayResults(filteredData);
+});
+
+// Kembali ke home
+homeButton.addEventListener("click", () => {
+  window.location.href = "https://zetlyrics.github.io/";
 });
 
 // Memuat data saat halaman dimuat
